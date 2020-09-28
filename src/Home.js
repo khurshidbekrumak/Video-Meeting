@@ -26,7 +26,6 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="container2">
-				<img src="sulpakbriefinglogo.png" alt="Sulpak Briefing" width='100px' height='100px'>
 				<div>
 					<h1 style={{ fontSize: "45px" }}>Sulpak Briefing</h1>
 					<p style={{ fontWeight: "200" }}>Для видеоконференций, который позволяет тебе оставаться на связи со всеми коллегами.</p>
