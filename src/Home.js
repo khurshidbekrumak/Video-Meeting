@@ -25,7 +25,10 @@ class Home extends Component {
 
 	render() {
 		return (
-			<div className="container2">				
+			<div className="container2">
+				<div>
+					<img src="Sulpak-Briefing.png" alt="Sulpak Briefing", width='100px', height='100px'>
+				</div>
 				<div>
 					<h1 style={{ fontSize: "45px" }}>Sulpak Briefing</h1>
 					<p style={{ fontWeight: "200" }}>Для видеоконференций, которые позволяет вам оставаться на связи со всеми своими коллегами.</p>
@@ -36,7 +39,7 @@ class Home extends Component {
 					textAlign: "center", margin: "auto", marginTop: "100px"
 				}}>
 					<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Начать встречу или присоединиться к ней</p>
-					<Input placeholder="Введи ссылку чтобы присоедениться" onChange={e => this.handleChange(e)} />
+					<Input placeholder="Введи ссылку..." onChange={e => this.handleChange(e)} />
 					<Button variant="contained" color="primary" onClick={this.join} style={{ margin: "20px" }}>Начать</Button>
 				</div>
 			</div>
