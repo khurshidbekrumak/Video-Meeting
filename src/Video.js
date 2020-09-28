@@ -457,9 +457,9 @@ class Video extends Component {
 					<div>
 						<div style={{background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
 								textAlign: "center", margin: "auto", marginTop: "50px", justifyContent: "center"}}>
-							<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Set your username</p>
+							<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Установите ваше имя пользователя</p>
 							<Input placeholder="Имя пользователя" value={this.state.username} onChange={e => this.handleUsername(e)} />
-							<Button variant="contained" color="primary" onClick={this.connect} style={{ margin: "20px" }}>Connect</Button>
+							<Button variant="contained" color="primary" onClick={this.connect} style={{ margin: "20px" }}>Подключиться</Button>
 						</div>
 
 						<div style={{ justifyContent: "center", textAlign: "center", paddingTop: "40px" }}>
@@ -508,7 +508,7 @@ class Video extends Component {
 							</Modal.Body>
 							<Modal.Footer className="div-send-msg">
 								<Input placeholder="Message" value={this.state.message} onChange={e => this.handleMessage(e)} />
-								<Button variant="contained" color="primary" onClick={this.sendMessage}>Send</Button>
+								<Button variant="contained" color="primary" onClick={this.sendMessage}>Отправить</Button>
 							</Modal.Footer>
 						</Modal>
 
