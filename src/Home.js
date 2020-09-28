@@ -31,7 +31,7 @@ class Home extends Component {
 				</div>
 				<div>
 					<h1 style={{ fontSize: "45px" }}>Sulpak Briefing</h1>
-					<p style={{ fontWeight: "200" }}>Для видеоконференций, которые позволяет вам оставаться на связи со всеми своими коллегами.</p>
+					<p style={{ fontWeight: "200" }}>Для видеоконференций, который позволяет тебе оставаться на связи со всеми коллегами.</p>
 				</div>
 
 				<div style={{
