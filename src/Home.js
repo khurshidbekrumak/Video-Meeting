@@ -27,7 +27,7 @@ class Home extends Component {
 		return (
 			<div className="container2">
 				<div>
-					<img src="Sulpak-Briefing.png" alt="Sulpak Briefing", width='100px', height='100px'>
+					<img src="sulpakbriefinglogo.png" alt="Sulpak Briefing" width='100px' height='100px'>
 				</div>
 				<div>
 					<h1 style={{ fontSize: "45px" }}>Sulpak Briefing</h1>
