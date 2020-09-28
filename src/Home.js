@@ -31,12 +31,12 @@ class Home extends Component {
 					<IconButton style={{color: "black"}} onClick={() => window.location.href="https://github.com/0x5eba/Video-Meeting"}>
 						<GitHubIcon />
 					</IconButton>
-				</div>
+				</div> -->
 				
 				<div>
 					<h1 style={{ fontSize: "45px" }}Sulpak Briefing</h1>
 					<p style={{ fontWeight: "200" }}>Для видеоконференций, который позволяет вам оставаться на связи со всеми своими коллегами.</p>
-				</div> -->
+				</div>
 
 				<div style={{
 					background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
