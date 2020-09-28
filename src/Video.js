@@ -417,17 +417,17 @@ class Video extends Component {
 			textArea.select()
 			try {
 				document.execCommand('copy')
-				message.success("Link copied to clipboard!")
+				message.success("Ссылка скопирована в буфер обмена!")
 			} catch (err) {
-				message.error("Failed to copy")
+				message.error("Не удалось скопировать")
 			}
 			document.body.removeChild(textArea)
 			return
 		}
 		navigator.clipboard.writeText(text).then(function () {
-			message.success("Link copied to clipboard!")
+			message.success("Ссылка скопирована в буфер обмена!")
 		}, () => {
-			message.error("Failed to copy")
+			message.error("Не удалось скопировать")
 		})
 	}
 
@@ -439,7 +439,7 @@ class Video extends Component {
 		let matchChrome = /google inc/.test(vendor) ? userAgent.match(/(?:chrome|crios)\/(\d+)/) : null
 		// let matchFirefox = userAgent.match(/(?:firefox|fxios)\/(\d+)/)
 		// return matchChrome !== null || matchFirefox !== null
-		return matchChrome !== null
+		// return matchChrome !== null
 	}
 
 	render() {
@@ -458,7 +458,7 @@ class Video extends Component {
 						<div style={{background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
 								textAlign: "center", margin: "auto", marginTop: "50px", justifyContent: "center"}}>
 							<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Set your username</p>
-							<Input placeholder="Username" value={this.state.username} onChange={e => this.handleUsername(e)} />
+							<Input placeholder="Имя пользователя" value={this.state.username} onChange={e => this.handleUsername(e)} />
 							<Button variant="contained" color="primary" onClick={this.connect} style={{ margin: "20px" }}>Connect</Button>
 						</div>
 
@@ -497,14 +497,14 @@ class Video extends Component {
 
 						<Modal show={this.state.showModal} onHide={this.closeChat} style={{ zIndex: "999999" }}>
 							<Modal.Header closeButton>
-								<Modal.Title>Chat Room</Modal.Title>
+								<Modal.Title>Чат</Modal.Title>
 							</Modal.Header>
 							<Modal.Body style={{ overflow: "auto", overflowY: "auto", height: "400px", textAlign: "left" }} >
 								{this.state.messages.length > 0 ? this.state.messages.map((item, index) => (
 									<div key={index} style={{textAlign: "left"}}>
 										<p style={{ wordBreak: "break-all" }}><b>{item.sender}</b>: {item.data}</p>
 									</div>
-								)) : <p>No message yet</p>}
+								)) : <p>Сообщений пока нет</p>}
 							</Modal.Body>
 							<Modal.Footer className="div-send-msg">
 								<Input placeholder="Message" value={this.state.message} onChange={e => this.handleMessage(e)} />
@@ -516,8 +516,8 @@ class Video extends Component {
 							<div style={{ paddingTop: "20px" }}>
 								<Input value={window.location.href} disable="true"></Input>
 								<Button style={{backgroundColor: "#3f51b5",color: "whitesmoke",marginLeft: "20px",
-									marginTop: "10px",width: "120px",fontSize: "10px"
-								}} onClick={this.copyUrl}>Copy invite link</Button>
+									marginTop: "10px",width: "180px",fontSize: "10px"
+								}} onClick={this.copyUrl}>Скопировать ссылку для приглашения</Button>
 							</div>
 
 							<Row id="main" className="flex-container" style={{ margin: 0, padding: 0 }}>
